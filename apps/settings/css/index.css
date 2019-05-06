@@ -1,0 +1,109 @@
+body
+{
+height: 100vh;
+-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+.mainPanel {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+}
+.inputRow{
+display:flex;
+padding-left:60px;
+padding-right:60px;
+margin-left:60px;
+margin-right:60px;
+flex-flow:row;
+justify-content:space-between;
+align-items:center;
+width:80%;
+}
+.settingsList{
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+  width:100%;
+}
+input[type="text"]{
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  font-size: 1.1em;
+  font-family: helvetica;
+  border: 1px solid #3ac7ff;
+  background: transparent ;
+  color: #3ac7ff;
+}
+input[name="wifiSsid"]{
+  width: 40%;
+}
+input[name="wifiPassword"]{
+  width: 40%;
+}
+input[name="id"]{
+  width: 40%;
+}
+button[name="sendSms"]{
+  position: absolute;
+  color: #3ac7ff;
+  right: 0;
+  height: 100%;
+  border: 1px solid #3ac7ff;
+  background: transparent;
+  top: 0;
+  width: auto;
+  font-size: 1em;
+  min-width: 70px;
+  border-radius: 0;
+  margin-right: 2px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  margin-right: -1px;
+}
+.smsKeyBoard{
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 100vh;
+  transition: 0.5s;
+  background: transparent;
+}
+.smsKeyBoardRow{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.smsKeyBoardRow button, button {
+  background: white;
+  border-radius: 2px;
+  margin: 2px;
+  font-family: helvetica;
+  background:transparent;
+  border: 1px solid #68ceff;
+  color: #3ac7ff;
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  width: 10%;
+  font-size: 1.1em;
+  height: 32px;
+}
+button[name="changePassword"],button[name="changeId"],button[name="syncGallery"]{
+  width:40%;
+  margin-top:5px;
+}
+button[name="smsKeyBoardSpaceButton"]
+{
+  width: 80%;
+}

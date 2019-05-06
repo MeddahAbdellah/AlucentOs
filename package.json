@@ -1,0 +1,21 @@
+{
+  "name": "alucentos",
+  "version": "1.0.0",
+  "description": "AlucentX Operating System",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "meddahAbdallah",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "3.0.13",
+    "electron-rebuild": "^1.8.4"
+  },
+  "dependencies": {
+    "bleno": "https://github.com/abandonware/bleno/tarball/master",
+    "download": "^7.1.0",
+    "node-bluetooth": "^1.2.5",
+    "pi-wifi": "^1.2.0"
+  }
+}

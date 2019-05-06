@@ -1,0 +1,60 @@
+.mainPanel{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    overflow-y:auto;
+    overflow-x:hidden;
+    flex-flow:column;
+    align-items:center;
+}
+.imgDisplay{
+    background:black;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row;
+    transition: transform .2s; /* Animation */
+    align-items: center;
+    overflow-x: auto;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2 !important;
+}
+.imgDisplay img {min-width:100vw; height:auto; max-height:80vh;}
+
+.gallery{
+    display:flex;
+    flex-flow:row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width:98vw;
+}
+.gallery img {
+    max-width: 100%;
+    /*max-height:100%;*/
+    min-width: 100%;
+    /*min-height:100%;*/
+}
+
+
+.galleryItem {
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    max-width: 100px;
+    overflow:hidden;
+    margin:2px;
+    transition:0.3s;
+    display: flex;
+    flex-flow:column;
+    justify-content:center;
+}
+.galleryItemHover{
+-webkit-box-shadow: 0px 0px 75px 20px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 75px 20px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 75px 20px rgba(0,0,0,0.75);
+z-index:1 !important;
+}

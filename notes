@@ -1,0 +1,12 @@
+Edit the configuration file of the panel :
+
+sudo nano /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+At the very top of the file, in the General section, you can modify these parameters
+
+autohide=0
+heightwhenhidden=2
+You can replace them by
+
+autohide=1
+heightwhenhidden=0
+if you want it to completely disappear

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poiret+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="../public/css/feather.css">
+        <link rel="stylesheet" type="text/css" href="../public/css/index.css">
+        <title>AlucentX</title>
+    </head>
+    <body >
+
+      <div class="cursor1">
+      </div>
+      <div class="cursor2">
+      </div>
+      <div class="cursorShadow1">
+      </div>
+      <div class="cursorShadow2">
+      </div>
+      <div class="mainFrame">
+        <div class="topMenu" data-hover="true" data-hover-class="topMenuHover">
+          <div class="topMenuApps">
+            <div class="appIcon" data-app="calling" data-hook="true" data-hover="true" data-hover-class="appIconHover">
+              <i class="feather icon-phone" style="font-size:1.5em;color:white"></i>
+            </div>
+            <div class="appIcon" data-app="messaging" data-hook="true" data-hover="true" data-hover-class="appIconHover">
+              <i class="feather icon-message-square" style="font-size:1.5em;color:white"></i>
+            </div>
+            <div class="appIcon" data-app="gallery" data-hook="true" data-hover="true" data-hover-class="appIconHover">
+              <i class="feather icon-image" style="font-size:1.5em;color:white"></i>
+            </div>
+	    <div class="appIcon" data-app="settings" data-hook="true" data-hover="true" data-hover-class="appIconHover">
+              <i class="feather icon-settings" style="font-size:1.5em;color:white"></i>
+            </div>
+          </div>
+          <div class="topMenuHandle" data-hook="true">
+            <i class="feather icon-chevron-down" style="font-size:1.5em;color:rgba(52, 152, 219, 0.6)"></i>
+          </div>
+        </div>
+        <div class="currentTime"></div>
+      </div>
+
+        <script src="../public/js/jquery.min.js"></script>
+	<script>window.$ = window.jQuery = require('../public/js/jquery.min.js');</script>
+        <script type="text/javascript" src="../public/js/velocity.js"></script>
+        <script type="text/javascript" src="../public/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="../public/js/jquery-collision.min.js"></script>
+        <script type="text/javascript" src="../public/js/cursor.js"></script>
+        <script type="text/javascript" src="../public/js/animations.js"></script>
+	<script type="text/javascript" src="../public/js/router.js"></script>
+        <script type="text/javascript">
+	  if (!$.fn.collision) {
+	    alert("Collision.js Doesn't exist");
+	  }
+	  if (!jQuery.ui) {
+	    alert("JQuery UI not loaded");
+	  }
+          var display = setInterval(function(){Time()},0);
+
+          function Time()
+          {
+          var date = new Date();
+          var time = date.toLocaleTimeString();
+          var day  = date.toDateString()
+          $(".currentTime").html("<h2>"+time+"</h2>"+"<h3>"+day+"</h3>");
+          }
+        </script>
+    </body>
+</html>
+
+

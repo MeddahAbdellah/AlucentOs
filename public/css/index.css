@@ -1,0 +1,132 @@
+*:focus {
+    outline: none important!;
+}
+body,html{
+  background: black;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+  overflow:hidden;
+}
+.home{
+   position: absolute;
+   top:20px;
+   left:30px;
+   width:40px;
+   height:40px;
+   z-index:20;
+   color:white;
+   transition:0.2s;
+}
+.homeHover{
+  top: 15px;
+}
+.cursor1,.cursor2{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  opacity: 0.5;
+  border-radius: 100%;
+  position: absolute;
+  z-index:999;
+  transition: 0.2s;
+  pointer-events: none;
+}
+.cursor1{
+  background: #FFCA28;
+
+}
+.cursor2{
+  background: #9C27B0;
+
+}
+.cursorShadow1,.cursorShadow2{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: grey;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.cursorShadow2{
+  background:green;
+}
+
+.currentTime{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  width: 10vw;
+}
+
+.topMenu{
+  position: absolute;
+  border-radius: 10px;
+  top: -60px; /*animated to become -55px when hovered*/
+  height: 85px;
+  border: 1px solid rgba(52, 152, 219, 0.6);
+  width: 90vw;
+  transition: 0.5s;
+  background: rgba(52, 152, 219, 0.2);
+  display: flex;
+  flex-flow: column;
+  align-items:center;
+  overflow: hidden;
+}
+.topMenuHover{
+  top: -10px;
+}
+
+.mainFrame{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.topMenuApps{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  padding-left: 20px;
+  align-items: flex-start;
+}
+.topMenuHandle{
+  position: absolute;
+  bottom: 0;
+}
+.appIcon{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  margin-top: 15px;
+  display: flex;
+  transition: 0.3s;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.appIconHover{
+  width: 50px;
+  height: 50px;
+}
+.appIcon:nth-child(1){
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+.appIcon:nth-child(2){
+  background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+}
+.appIcon:nth-child(3){
+  background-color:#ee9617;
+  background-image:linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+}
+.appIcon:nth-child(4){
+background-color: #045de9;
+background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+}
+

@@ -1,0 +1,124 @@
+body
+{
+height: 100vh;
+-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #424242; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#3498DB ;
+}
+
+.mainPanel {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow: hidden;
+}
+.texts{
+  height: 100%;
+  overflow-y: auto;
+  overflow-x:hidden;
+  width: 100vw;
+  display:flex;
+  flex-flow:column;
+}
+
+#correspondant{
+    color: #3ac7ff;
+}
+.usrMsg,.corrMsg{
+  color: #3ac7ff;
+  font-size:1.1em;
+  margin: 10px;
+}
+.usrMsg{
+ color:white;
+ align-self: flex-end;
+}
+.smsText{
+  width: 100vw;
+  position: relative;
+}
+.smsKeyBoard{
+
+}
+input[name="smsInput"],input[name="phoneSmsInput"]{
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  font-size: 1.1em;
+  font-family: helvetica;
+  border: 1px solid #3ac7ff;
+  background: transparent ;
+  color: #3ac7ff;
+}
+input[name="phoneSmsInput"]{
+  margin: -2px;
+  padding-left: 30px;
+}
+button[name="sendSms"]{
+  position: absolute;
+  color: #3ac7ff;
+  right: 0;
+  height: 100%;
+  border: 1px solid #3ac7ff;
+  background: transparent;
+  top: 0;
+  width: auto;
+  font-size: 1em;
+  min-width: 70px;
+  border-radius: 0;
+  margin-right: 2px;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.47);
+  margin-right: -1px;
+}
+.smsKeyBoard{
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  top: 100vh;
+  transition: 0.5s;
+  background: transparent;
+}
+.smsKeyBoardRow{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.smsKeyBoardRow button{
+  background: white;
+  border-radius: 2px;
+  margin: 2px;
+  font-family: helvetica;
+  background:transparent;
+  border: 1px solid #68ceff;
+  color: #3ac7ff;
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  box-shadow: -1px 0px 5px 1px rgba(6,163,238,0.66);
+  width: 10%;
+  font-size: 1.1em;
+  height: 42px;
+
+}
+button[name="smsKeyBoardSpaceButton"]
+{
+  width: 80%;
+}
